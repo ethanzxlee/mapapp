@@ -18,6 +18,11 @@
     "@angular/http": "^4.4.6",
     "@angular/platform-browser": "^4.4.6",
     "@angular/router": "^4.4.6",
+    "@ngrx/effects": "~4.1.1",
+    "@ngrx/router-store": "~4.1.1",
+    "@ngrx/store": "~4.1.1",
+    "@ngrx/store-devtools": "~4.1.1",
+    "@turf/turf": "~4.7.3",
     "nativescript-angular": "~4.4.1",
     "nativescript-theme-core": "~1.0.4",
     "rxjs": "^5.5.8",
@@ -25,6 +30,7 @@
     "zone.js": "^0.8.23"
   },
   "devDependencies": {
+    "@types/geojson": "1.0.2",
     "babel-traverse": "6.26.0",
     "babel-types": "6.26.0",
     "babylon": "6.18.0",

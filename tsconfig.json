@@ -12,6 +12,9 @@
         ],
         "baseUrl": ".",
         "paths": {
+            "@uow-map/*": [
+                "./app/modules/*"
+            ],
             "*": [
                 "./node_modules/tns-core-modules/*",
                 "./node_modules/*"
