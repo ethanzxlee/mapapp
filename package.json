@@ -11,14 +11,25 @@
     }
   },
   "dependencies": {
+    "@angular/common": "^4.4.6",
+    "@angular/compiler": "^4.4.6",
+    "@angular/core": "^4.4.6",
+    "@angular/forms": "^4.4.6",
+    "@angular/http": "^4.4.6",
+    "@angular/platform-browser": "^4.4.6",
+    "@angular/router": "^4.4.6",
+    "nativescript-angular": "~4.4.1",
     "nativescript-theme-core": "~1.0.4",
-    "tns-core-modules": "~3.4.0"
+    "rxjs": "^5.5.8",
+    "tns-core-modules": "~3.4.0",
+    "zone.js": "^0.8.23"
   },
   "devDependencies": {
     "babel-traverse": "6.26.0",
     "babel-types": "6.26.0",
     "babylon": "6.18.0",
     "lazy": "1.0.11",
-    "typescript": "^2.8.1"
+    "typescript": "~2.4.0",
+    "nativescript-dev-typescript": "~0.6.0"
   }
 }
