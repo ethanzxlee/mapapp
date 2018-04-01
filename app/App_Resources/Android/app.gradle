@@ -8,7 +8,7 @@
 android {  
   defaultConfig {  
     generatedDensities = []
-    applicationId = "__PACKAGE__" 
+    applicationId = "com.zxlee.campusmapapp" 
     
     //override supported platforms
     // ndk {
