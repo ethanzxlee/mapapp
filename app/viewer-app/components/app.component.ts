@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <ActionBar title="Mvssyu1 App" class="action-bar"></ActionBar>
     <!-- Your UI components go here -->
-    <Label text="k1ko"></Label>
+    <Label text="k10099ko"></Label>
   `
 })
 export class AppComponent {

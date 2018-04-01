@@ -7,11 +7,12 @@ import * as components from './components';
 // import * as rootStore from './store';
 
 @NgModule({
-  declarations: [components.AppComponent],
-  bootstrap: [components.AppComponent],
-  imports: [NativeScriptModule, 
-    // StoreModule.forRoot(rootStore.reducers)
-],
-  schemas: [NO_ERRORS_SCHEMA]
+    declarations: [components.AppComponent],
+    bootstrap: [components.AppComponent],
+    imports: [
+        NativeScriptModule
+        // StoreModule.forRoot(rootStore.reducers)
+    ],
+    schemas: [NO_ERRORS_SCHEMA]
 })
 export class ViewerAppModule {}
