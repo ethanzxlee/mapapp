@@ -10,6 +10,7 @@
         "baseUrl": ".",
         "paths": {
             "@uow-map/*": ["./app/modules/*"],
+            "@uow-map-viewer/*": ["./app/viewer-app/*"],
             "*": ["./node_modules/tns-core-modules/*", "./node_modules/*"]
         }
     },

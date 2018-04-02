@@ -1,1 +1,1 @@
-export * from './app.component';
+export * from './viewer-app.component';

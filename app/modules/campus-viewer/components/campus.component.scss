@@ -1,0 +1,87 @@
+// @import '../../../../shared/style/_settings';
+
+// :host {
+//     height: 100%;
+//     background: '#ffffff';
+//     min-width: 100%;
+//     width: 100%;
+//     display: flex;
+//     flex-direction: row;
+// }
+
+// .menu-container {
+//     height: 100%;
+//     background: '#ffffff';
+//     width: $campus-menu-container-width;
+//     min-width: $campus-menu-container-width;
+//     display: flex;
+//     flex-direction: column;
+
+//     @include breakpoint(small only) {
+//         min-width: 100%;
+//         width: 100%;
+//         height: 100%;
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         z-index: 100;
+//         pointer-events: none;
+//         background: transparent;
+//     }
+
+//     .header {
+//         background: map-get($foundation-palette, secondary);
+//         height: $uow-logo-container-height;
+//         min-height: $uow-logo-container-height;
+//         transition: all $global-transition;
+//         overflow: hidden;
+
+//         @include breakpoint(small only) {
+//             display: none;
+//         }
+//     }
+
+//     .uow-logo {
+//         height: 100px;
+//         margin: $global-padding;
+//     }
+
+//     uow-map-tab-bar {
+//         height: $campus-menu-tab-bar-height - 14px;
+//         min-height: $campus-menu-tab-bar-height - 14px;
+//         max-height: $campus-menu-tab-bar-height - 14px;
+//         z-index: 300;
+
+//         @include breakpoint(small only) {
+//             order: 1;
+//             height: $campus-menu-tab-bar-height;
+//             min-height: $campus-menu-tab-bar-height;
+//             max-height: $campus-menu-tab-bar-height;
+//         }
+//     }
+
+//     .content {
+//         flex-grow: 1;
+//         display: flex;
+//         flex-direction: column;
+
+//         @include breakpoint(medium) {
+//             max-height: calc(100% - #{$uow-logo-container-height} - #{$search-bar-height});
+//         }
+
+//         @include breakpoint(small only) {
+//             order: 0;
+//         }
+//     }
+// }
+
+// .map-container {
+//     flex-grow: 1;
+//     height: 100%;
+
+//     // @include breakpoint(small only) {
+//     //     position: fixed;
+//     //     width: 100%;
+//     // }
+// }
+

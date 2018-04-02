@@ -4,6 +4,8 @@ import {
     VIEWER_READ_DISCLAIMER_KEY
 } from '@uow-map/constants';
 
+import { getString, hasKey } from 'application-settings';
+
 export interface SettingReducerState {
     hasReadDisclaimer: boolean;
     isDisclaimerModalOpened: boolean;
@@ -12,10 +14,12 @@ export interface SettingReducerState {
 
 export const initialState: SettingReducerState = {
     hasReadDisclaimer:
-        localStorage.getItem(VIEWER_READ_DISCLAIMER_KEY) === 'true',
+        hasKey(VIEWER_READ_DISCLAIMER_KEY) &&
+        getString(VIEWER_READ_DISCLAIMER_KEY) === 'true',
     isDisclaimerModalOpened: false,
-    lastCampusId: parseInt(localStorage.getItem(VIEWER_LAST_CAMPUS_KEY), 10)
+    lastCampusId: parseInt(getString(VIEWER_LAST_CAMPUS_KEY), 10)
 };
+
 
 export function reducer(
     state: SettingReducerState = initialState,

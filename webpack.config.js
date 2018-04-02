@@ -55,7 +55,8 @@ module.exports = env => {
             http: false,
             timers: false,
             setImmediate: false,
-            fs: 'empty'
+            fs: 'empty',
+            net: 'empty'
         },
         module: { rules },
         plugins
