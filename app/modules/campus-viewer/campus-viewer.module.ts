@@ -24,17 +24,10 @@ import * as guards from './guards';
     ],
     exports: [components.CampusComponent],
     declarations: [components.CampusComponent],
-    providers: []
+    providers: [
+        guards.CampusesStoreGuard,
+        guards.CampusExistsGuard,
+        guards.MapStyleStoreGuard
+    ]
 })
-export class CampusViewerModule {
-    static forRoot(): ModuleWithProviders {
-        return {
-            ngModule: CampusViewerModule,
-            providers: [
-                guards.CampusesStoreGuard,
-                guards.CampusExistsGuard,
-                guards.MapStyleStoreGuard
-            ]
-        };
-    }
-}
+export class CampusViewerModule {}

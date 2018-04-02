@@ -21,7 +21,7 @@ export class CampusApiService {
 
     getMapStyle(campusId: string | number): Observable<any> {
         return this.http.get<any>(
-            `${constant.API_BASE_URL}/map-nodes/mapbox-style/?campus=${campusId}`
+            `${constant.API_BASE_URL}map-nodes/mapbox-style/?campus=${campusId}`
         );
     }
 }

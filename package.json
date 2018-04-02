@@ -4,37 +4,39 @@
   "nativescript": {
     "id": "com.zxlee.campusmapapp",
     "tns-android": {
-      "version": "3.3.1"
+      "version": "3.4.2"
     },
     "tns-ios": {
-      "version": "3.3.0"
+      "version": "3.4.1"
     }
   },
   "dependencies": {
-    "@angular/common": "^4.4.6",
-    "@angular/compiler": "^4.4.6",
-    "@angular/core": "^4.4.6",
-    "@angular/forms": "^4.4.6",
-    "@angular/http": "^4.4.6",
-    "@angular/platform-browser": "^4.4.6",
-    "@angular/router": "^4.4.6",
-    "@ngrx/effects": "^4.1.1",
-    "@ngrx/router-store": "^4.1.1",
-    "@ngrx/store": "^4.1.1",
-    "@ngrx/store-devtools": "^4.1.1",
+    "@angular/common": "~5.2.0",
+    "@angular/compiler": "~5.2.0",
+    "@angular/core": "~5.2.0",
+    "@angular/forms": "~5.2.0",
+    "@angular/http": "~5.2.0",
+    "@angular/platform-browser": "~5.2.0",
+    "@angular/platform-browser-dynamic": "~5.2.0",
+    "@angular/router": "~5.2.0",
+    "@ngrx/effects": "~5.2.0",
+    "@ngrx/router-store": "~5.2.0",
+    "@ngrx/store": "~5.2.0",
+    "@ngrx/store-devtools": "~5.2.0",
     "@turf/turf": "^4.7.3",
-    "nativescript-angular": "~4.4.1",
-    "nativescript-mapbox": "^3.3.0",
+    "nativescript-angular": "~5.2.0",
+    "nativescript-mapbox": "~3.3.0",
     "nativescript-theme-core": "~1.0.4",
-    "node-sass": "^4.8.3",
+    "ngrx-store-logger": "^0.2.1",
+    "node-sass": "~4.8.3",
     "rxjs": "~5.5.8",
     "sass-loader": "^6.0.7",
-    "tns-core-modules": "~3.3.0",
+    "tns-core-modules": "~3.4.1",
     "zone.js": "~0.8.23"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "^4.4.6",
-    "@ngtools/webpack": "~1.6.0",
+    "@angular/compiler-cli": "~5.2.0",
+    "@ngtools/webpack": "~1.9.4",
     "@types/geojson": "~1.0.2",
     "@types/mapbox-gl": "~0.43.0",
     "babel-traverse": "6.26.0",
@@ -46,22 +48,15 @@
     "nativescript": "~3.3.0",
     "nativescript-css-loader": "~0.26.0",
     "nativescript-dev-typescript": "~0.6.0",
-    "nativescript-dev-webpack": "~0.8.0",
+    "nativescript-dev-webpack": "~0.9.2",
     "nativescript-worker-loader": "~0.8.1",
     "raw-loader": "~0.5.1",
     "resolve-url-loader": "~2.1.0",
-    "typescript": "~2.4.0",
+    "typescript": "~2.6.0",
     "webpack": "~3.2.0",
     "webpack-bundle-analyzer": "~2.8.2",
-    "webpack-sources": "~1.0.1"
-  },
-  "scripts": {
-    "ns-bundle": "ns-bundle",
-    "start-android-bundle": "npm run ns-bundle --android --run-app",
-    "start-ios-bundle": "npm run ns-bundle --ios --run-app",
-    "build-android-bundle": "npm run ns-bundle --android --build-app",
-    "build-ios-bundle": "npm run ns-bundle --ios --build-app",
-    "publish-ios-bundle": "npm run ns-bundle --ios --publish-app",
-    "generate-android-snapshot": "generate-android-snapshot --targetArchs arm,arm64,ia32 --install"
+    "webpack-sources": "~1.0.1",
+    "css-loader": "~0.28.7",
+    "uglifyjs-webpack-plugin": "~1.1.6"
   }
 }

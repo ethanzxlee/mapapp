@@ -26,7 +26,9 @@ export class CampusComponent implements OnInit, OnDestroy {
         this.campusArea$ = this.store.select(campusesSelector.currentCampusBoundSelector);
     }
 
-    ngOnInit() {}
+    ngOnInit() {
+
+    }
 
     ngOnDestroy() {}
 }
