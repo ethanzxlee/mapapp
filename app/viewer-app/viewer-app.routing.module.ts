@@ -37,7 +37,7 @@ export const APP_ROUTES: Routes = [
 @NgModule({
     imports: [
         NativeScriptRouterModule,
-        NativeScriptRouterModule.forRoot(APP_ROUTES, { useHash: false, enableTracing: true })
+        NativeScriptRouterModule.forRoot(APP_ROUTES)
     ],
     exports: [NativeScriptRouterModule]
 })
