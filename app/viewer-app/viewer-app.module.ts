@@ -8,22 +8,21 @@ import { registerElement } from 'nativescript-angular/element-registry';
 
 import { ApiModule } from '@uow-map/api/api.module';
 import { CampusViewerModule } from '@uow-map/campus-viewer/campus-viewer.module';
+import { TabBarModule } from '@uow-map/tab-bar/tab-bar.module';
 import { ViewerAppRoutingModule } from './viewer-app.routing.module';
 
 import * as components from './components';
 import * as guards from './guards';
 import * as rootStore from './store';
 import { CustomRouterStateSerializer } from './store/reducers/router.reducer';
-
 import { storeLogger } from 'ngrx-store-logger';
-export function logger(reducer: ActionReducer<rootStore.RootState>): any {
-    // default, no options
-    return storeLogger()(reducer);
-  }
 
+export function logger(reducer: ActionReducer<rootStore.RootState>): any {
+    return storeLogger()(reducer);
+}
 export const metaReducers = [logger];
 
-registerElement('Mapbox', () => require('nativescript-mapbox').MapboxView);
+registerElement('ns-mapbox', () => require('nativescript-mapbox').MapboxView);
 
 @NgModule({
     declarations: [components.ViewerAppComponent],
@@ -31,22 +30,25 @@ registerElement('Mapbox', () => require('nativescript-mapbox').MapboxView);
     imports: [
         NativeScriptModule,
         StoreDevtoolsModule.instrument(),
-        StoreModule.forRoot(rootStore.reducers, {metaReducers}),
+        StoreModule.forRoot(rootStore.reducers, { metaReducers }),
         EffectsModule.forRoot(rootStore.effects),
         StoreRouterConnectingModule,
         ViewerAppRoutingModule,
         ApiModule,
-        CampusViewerModule
+        CampusViewerModule,
+        TabBarModule
     ],
     providers: [
         {
             provide: RouterStateSerializer,
             useClass: CustomRouterStateSerializer
         },
-        guards.MapboxTokenStoreGuard,
+        guards.MapboxTokenStoreGuard
         // guards.DisclaimerModalGuard,
         // services.DisclaimerModal
     ],
     schemas: [NO_ERRORS_SCHEMA]
 })
 export class ViewerAppModule {}
+
+

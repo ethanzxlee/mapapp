@@ -1,23 +1,22 @@
-// Add your native dependencies here:
 
-// Uncomment to add recyclerview-v7 dependency
-//dependencies {
-//	compile 'com.android.support:recyclerview-v7:+'
-//}
+dependencies {
+    compile 'com.android.support:design:27.1.0'
+}
 
-android {  
-  defaultConfig {  
+android {
+  defaultConfig {
     generatedDensities = []
-    applicationId = "com.zxlee.campusmapapp" 
-    
-    //override supported platforms
-    // ndk {
-    //       abiFilters.clear()
-    //   		abiFilters "armeabi-v7a"
- 		// }
-  
-  }  
-  aaptOptions {  
-    additionalParameters "--no-version-vectors"  
-  }  
-} 
+    applicationId = "com.zxlee.campusmapapp"
+
+  }
+  aaptOptions {
+    additionalParameters "--no-version-vectors"
+  }
+}
+
+// repositories {
+//     maven {
+//         url "https://maven.google.com"
+//     }
+// }
+

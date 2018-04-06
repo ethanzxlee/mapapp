@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 
-// import { TabBarModule } from '../../app/tab-bar/tab-bar.module';
+import { TabBarModule } from '@uow-map/tab-bar/tab-bar.module';
 // import { MapboxModule } from '../mapbox/mapbox.module';
 
 import * as store from './store';
@@ -17,7 +17,8 @@ import * as guards from './guards';
         CommonModule,
         HttpClientModule,
         StoreModule.forFeature('campusReducer', store.reducers),
-        EffectsModule.forFeature(store.effects)
+        EffectsModule.forFeature(store.effects),
+        TabBarModule
         // RouterModule,
         // TabBarModule,
         // MapboxModule
