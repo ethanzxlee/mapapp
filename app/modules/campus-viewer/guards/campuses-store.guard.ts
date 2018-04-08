@@ -7,11 +7,11 @@ import { of } from 'rxjs/observable/of';
 import { Store, createSelector } from '@ngrx/store';
 
 import * as campusesReducer from '../store/reducers/campuses.reducer';
-import * as rootReducer from '@uow-map-viewer/store/reducers';
+import * as rootReducer from '@uow-map/viewer/store/reducers';
 import * as campusesAction from '../store/actions/campuses.action';
-import * as routerAction from '@uow-map-viewer/store/actions/router.action';
-import * as routerSelector from '@uow-map-viewer/store/selectors/router.selector';
-import * as settingSelector from '@uow-map-viewer/store/selectors/setting.selector';
+import * as routerAction from '@uow-map/viewer/store/actions/router.action';
+import * as routerSelector from '@uow-map/viewer/store/selectors/router.selector';
+import * as settingSelector from '@uow-map/viewer/store/selectors/setting.selector';
 import * as campusesSelector from '../store/selectors/campuses.selector';
 import { VIEWER_LAST_CAMPUS_KEY } from '@uow-map/constants';
 

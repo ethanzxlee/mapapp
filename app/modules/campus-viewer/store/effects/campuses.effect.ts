@@ -5,7 +5,7 @@ import { map, switchMap, catchError } from 'rxjs/operators';
 
 import { CampusApiService } from '@uow-map/api/services';
 import * as campusesAction from '../actions/campuses.action';
-import * as routerAction from '@uow-map-viewer/store/actions/router.action';
+import * as routerAction from '@uow-map/viewer/store/actions/router.action';
 
 @Injectable()
 export class CampusesEffect {

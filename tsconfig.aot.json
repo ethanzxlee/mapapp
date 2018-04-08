@@ -4,7 +4,7 @@
         "baseUrl": ".",
         "paths": {
             "@uow-map/*": ["./app/modules/*"],
-            "@uow-map-viewer/*": ["./app/viewer-app/*"],
+            "@uow-map/viewer/*": ["./app/viewer-app/*"],
             "application": ["node_modules/tns-core-modules/application"],
             "application-settings": ["node_modules/tns-core-modules/application-settings"],
             "camera": ["node_modules/tns-core-modules/camera"],

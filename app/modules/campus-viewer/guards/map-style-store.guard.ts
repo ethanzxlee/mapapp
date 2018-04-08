@@ -7,8 +7,8 @@ import { of } from 'rxjs/observable/of';
 
 import * as MapStyleSelector from '../store/selectors/map-styles.selector';
 import * as MapStyleAction from '../store/actions/map-styles.action';
-import * as AppReducer from '@uow-map-viewer/store/reducers';
-import * as RouterAction from '@uow-map-viewer/store/actions/router.action';
+import * as AppReducer from '@uow-map/viewer/store/reducers';
+import * as RouterAction from '@uow-map/viewer/store/actions/router.action';
 import * as MapStyleReducer from '../store/reducers/map-styles.reducer';
 
 @Injectable()

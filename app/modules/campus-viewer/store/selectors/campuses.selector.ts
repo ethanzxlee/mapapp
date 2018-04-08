@@ -2,7 +2,7 @@ import { createSelector } from '@ngrx/store';
 import { centroid, bbox } from '@turf/turf';
 
 import { campusReducerStateSelector } from '../reducers';
-import * as routerSelector from '@uow-map-viewer/store/selectors/router.selector';
+import * as routerSelector from '@uow-map/viewer/store/selectors/router.selector';
 import * as models from '@uow-map/models';
 
 export const campusesStateSelector = createSelector(

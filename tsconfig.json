@@ -17,7 +17,7 @@
             "@uow-map/*": [
                 "./app/modules/*"
             ],
-            "@uow-map-viewer/*": [
+            "@uow-map/viewer/*": [
                 "./app/viewer-app/*"
             ],
             "*": [

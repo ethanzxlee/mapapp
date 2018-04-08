@@ -7,9 +7,9 @@ import { of } from 'rxjs/observable/of';
 
 import * as campusesSelector from '../store/selectors/campuses.selector';
 import * as campusesAction from '../store/actions/campuses.action';
-import * as rootReducer from '@uow-map-viewer/store/reducers';
-import * as routerAction from '@uow-map-viewer/store/actions/router.action';
-import * as settingAction from '@uow-map-viewer/store/actions/setting.action';
+import * as rootReducer from '@uow-map/viewer/store/reducers';
+import * as routerAction from '@uow-map/viewer/store/actions/router.action';
+import * as settingAction from '@uow-map/viewer/store/actions/setting.action';
 
 @Injectable()
 export class CampusExistsGuard implements CanActivate {

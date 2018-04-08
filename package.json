@@ -33,7 +33,13 @@
     "sass-loader": "^6.0.7",
     "tns-core-modules": "~3.4.1",
     "tns-core-modules-widgets": "^3.4.0",
-    "zone.js": "~0.8.23"
+    "zone.js": "~0.8.23",
+    "@uow-map/api": "file:app/modules/api",
+    "@uow-map/campus-viewer": "file:app/modules/campus-viewer",
+    "@uow-map/constants": "file:app/modules/constants",
+    "@uow-map/models": "file:app/modules/models",
+    "@uow-map/tab-bar": "file:app/modules/tab-bar",
+    "@uow-map/viewer": "file:app/viewer-app"
   },
   "devDependencies": {
     "@angular/compiler-cli": "~5.2.0",
