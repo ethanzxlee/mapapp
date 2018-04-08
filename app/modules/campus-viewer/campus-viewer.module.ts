@@ -1,4 +1,4 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
+import { NgModule, ModuleWithProviders, NO_ERRORS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
@@ -25,10 +25,7 @@ import * as guards from './guards';
     ],
     exports: [components.CampusComponent],
     declarations: [components.CampusComponent],
-    providers: [
-        guards.CampusesStoreGuard,
-        guards.CampusExistsGuard,
-        guards.MapStyleStoreGuard
-    ]
+    providers: [guards.CampusesStoreGuard, guards.CampusExistsGuard, guards.MapStyleStoreGuard],
+    schemas: [NO_ERRORS_SCHEMA]
 })
 export class CampusViewerModule {}

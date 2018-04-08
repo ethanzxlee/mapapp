@@ -1,9 +1,13 @@
 <AbsoluteLayout>
-    <Label text="Label from Absolute Layout" top="0"></Label>
-    <FlexboxLayout flexDirection="column">
-            <Label text="FlexFlexFlexLayout"></Label>
-            <uow-tab-bar></uow-tab-bar>
-        </FlexboxLayout>
+    <Label text="Label from Absolute Layout" top="50"></Label>
+    <FlexboxLayout width="100%" height="100%" flexDirection="column">
+        <Label text="FlexFlexFlexLayout" flexGrow="1"></Label>
+        <uow-tab-bar width="100%" height="56">
+            <uow-tab-bar-item></uow-tab-bar-item>
+            <uow-tab-bar-item></uow-tab-bar-item>
+            <uow-tab-bar-item></uow-tab-bar-item>
+        </uow-tab-bar>
+    </FlexboxLayout>
 </AbsoluteLayout>
 
 
